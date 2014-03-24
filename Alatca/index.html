@@ -898,7 +898,8 @@
 	
 		function downloadLayout(){
 			
-			//var html = $('#download-layout').html();
+			var html = $('#download-layout').html();
+			var isCheckDownLoadzip = false;
 			//alert(html);
 			//return;
 			
@@ -908,8 +909,12 @@
 				url: "http://alatca.magazine:2046/build_v3/download.php",  
 				data: { 'layout-v3': $('#download-layout').html() },  
 				success: function(data) { 
-					alert(data);return;
+					isCheckDownLoadzip = true;
+					//alert('You can download file zip');
+					//isCheckDownLoadzip = data
+					//return;
 					//window.location.href = '/Alatca/build_v3/download.php'; 
+					
 					}
 			});
 		}
@@ -1014,8 +1019,10 @@
     </p>
   </div>
   <div class="modal-footer"> 
-     <a class="btn btn-primary " id="download" onclick = 'downloadLayout()'>Download .zip</a>
-	  <a class="btn btn-primary " id="downloadhtml">Download .html only</a>
+     <a class="btn btn-primary "  href="http://alatca.magazine:2046/build_v3/zip/index.html" >Download .html only</a>
+     <a class="btn btn-primary "  href="http://alatca.magazine:2046/build_v3/appmagazine.zip" >Download.zip</a>
+     <a class="btn btn-primary " id="download" onclick = 'downloadLayout()' >Get link Download .zip</a>
+	  <a class="btn btn-primary " id="downloadhtml"> Get link Download .html only</a>
 	  <a class="btn" data-dismiss="modal">đóng</a> 
   </div>
 </div>
