@@ -8,7 +8,6 @@ $local_file = dirname(__FILE__) . '\savelayout.html';
 
 $content_file1 = "<html class=\"translated-ltr \">
 <head>
-<meta charset=\"utf-8\">
 <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
 <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">
 <meta name=\"title\" content=\"applications magazine publishing \">
@@ -84,7 +83,10 @@ $content_file2 = "</body></html>";
 
 $content_file = $content_file1.$content.$content_file2;
 
-file_put_contents($local_file, utf8_encode($content_file));
+if (file_exists($local_file)){
+	file_put_contents($local_file,$content_file);
+}else
+	die(' Not Exits File savelayout . Please Try again later and check link '.$local_file.'Is check savelayout.html file exist ? ');
 
 
 

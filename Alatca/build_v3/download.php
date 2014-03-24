@@ -51,8 +51,10 @@ $content_file2 = "</body></html>";
 $content_file = $content_file1.$content.$content_file2;
 
 //return var_dump($content_file);
-
-file_put_contents($local_file, utf8_encode($content_file));
+if (file_exists($local_file)){
+   file_put_contents($local_file, $content_file);
+}else 
+	die(' Not Exits File index.html . Please Try again later and check link '.$local_file.'Is check index.html file exist ? ');
 
 
 

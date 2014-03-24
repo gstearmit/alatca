@@ -1,6 +1,5 @@
 <html class="translated-ltr">
 <head>
-<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="title" content="applications magazine publishing ">
@@ -883,12 +882,12 @@
 		function saveLayout(){
 			
 			var demo = $('.demo').html()
-			alert(demo);
+		   //	alert(demo);
 			//return;
-			
-			
+		
 			$.ajax({  
 				type: "POST",  
+				contentType: "application/x-www-form-urlencoded;charset=utf-8",
 				url: "http://alatca.magazine:2046/savelayout/savelayout.php",  
 				data: { 'layout-v3': $('.demo').html() },  
 				success: function(data) {
@@ -899,13 +898,13 @@
 	
 		function downloadLayout(){
 			
-			var html = $('#download-layout').html();
-			alert(html);
+			//var html = $('#download-layout').html();
+			//alert(html);
 			//return;
-			
 			
 			$.ajax({  
 				type: "POST",  
+				contentType: "application/x-www-form-urlencoded;charset=utf-8",
 				url: "http://alatca.magazine:2046/build_v3/download.php",  
 				data: { 'layout-v3': $('#download-layout').html() },  
 				success: function(data) { 
@@ -924,6 +923,7 @@
 			
 			$.ajax({  
 				type: "POST",  
+				contentType: "application/x-www-form-urlencoded;charset=utf-8",
 				url: "/build_v3/downloadLayout",  
 				data: { 'layout-v3': $('#download-layout').html() },  
 				success: function(data) { window.location.href = '/build_v3/downloadHtml'; }
@@ -933,7 +933,8 @@
 		function undoLayout() {
 			
 			$.ajax({  
-				type: "POST",  
+				type: "POST", 
+				contentType: "application/x-www-form-urlencoded;charset=utf-8",
 				url: "/build_v3/getPreviousLayout",  
 				data: { },  
 				success: function(data) {
@@ -945,7 +946,8 @@
 		function redoLayout() {
 			
 			$.ajax({  
-				type: "POST",  
+				type: "POST",
+				contentType: "application/x-www-form-urlencoded;charset=utf-8",
 				url: "/build_v3/getPreviousLayout",  
 				data: { },  
 				success: function(data) {
