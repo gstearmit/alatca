@@ -1,4 +1,5 @@
-<html class="translated-ltr"><head>
+<html class="translated-ltr">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -882,13 +883,13 @@
 		function saveLayout(){
 			
 			var demo = $('.demo').html()
-			//alert(demo);
+			alert(demo);
 			//return;
 			
 			
 			$.ajax({  
 				type: "POST",  
-				url: "/build_v3/saveLayout",  
+				url: "http://alatca.magazine:2046/savelayout/savelayout.php",  
 				data: { 'layout-v3': $('.demo').html() },  
 				success: function(data) {
 					//updateButtonsVisibility();
@@ -905,11 +906,12 @@
 			
 			$.ajax({  
 				type: "POST",  
-				url: "http://alatca.magazine:2046/build_v3/downloadLayout.php",  
+				url: "http://alatca.magazine:2046/build_v3/download.php",  
 				data: { 'layout-v3': $('#download-layout').html() },  
 				success: function(data) { 
 					alert(data);return;
-					window.location.href = '/Alatca/build_v3/download.php'; }
+					//window.location.href = '/Alatca/build_v3/download.php'; 
+					}
 			});
 		}
 		
