@@ -53,13 +53,15 @@
             <div class="btn-group">
               <button type="button" class="btn btn-primary" data-target="#downloadModal" rel="/build/downloadModal" role="button" data-toggle="modal"><i class="icon-chevron-down icon-white"></i><font>Downloading</font></button>
               <button class="btn btn-primary" href="/share/index" role="button" data-toggle="modal" data-target="#shareModal"><i class="icon-share icon-white"></i><font>Chia sẻ</font></button>
+              <button class="btn btn-primary" href="/share/index" role="button" data-toggle="modal" data-target="#saveModal"><i class="icon-share icon-white"></i><font>Save</font></button>
               <button class="btn btn-primary" href="#clear" id="clear"><i class="icon-trash icon-white"></i><font><font>Delete</font></font></button>
             </div>
+            
             <div class="btn-group">
-            <!--  
-								<button class="btn btn-primary" href="#undo" id="undo"><i class="icon-arrow-left icon-white"></i><font>Quay lại</font></button>
-								<button class="btn btn-primary" href="#redo" id="redo"><i class="icon-arrow-right icon-white"></i><font>Đi tiếp</font></button>
-		   -->
+            
+			<button class="btn btn-primary" href="#undo" id="undo"><i class="icon-arrow-left icon-white"></i><font>Undo</font></button>
+			<button class="btn btn-primary" href="#redo" id="redo"><i class="icon-arrow-right icon-white"></i><font>Redo</font></button>
+		   
 			</div>
           </li>
         </ul>
@@ -84,7 +86,7 @@
             </div>
             <i class="icon-plus icon-white"></i><font>Layout Colum</font></li>
           <li style="display: list-item;" class="rows" id="estRows">
-            <div class="lyrow ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Xóa</font></a> <span class="drag label"><i class="icon-move"></i><font><font>Kéo</font></font></span>
+            <div class="lyrow ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Xóa</font></a> <span class="drag label"><i class="icon-move"></i><font>kéo</font></span>
               <div class="preview">
                 <input value="12" type="text">
               </div>
@@ -94,7 +96,7 @@
                 </div>
               </div>
             </div>
-            <div class="lyrow ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Xóa</font></a> <span class="drag label"><i class="icon-move"></i><font><font>Kéo</font></font></span>
+            <div class="lyrow ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Xóa</font></a> <span class="drag label"><i class="icon-move"></i><font>kéo</font></span>
               <div class="preview">
                 <input value="6 6" type="text">
               </div>
@@ -105,7 +107,7 @@
                 </div>
               </div>
             </div>
-            <div class="lyrow ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Xóa</font></a> <span class="drag label"><i class="icon-move"></i><font><font>kéo</font></font></span>
+            <div class="lyrow ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Xóa</font></a> <span class="drag label"><i class="icon-move"></i><font>kéo</font></span>
               <div class="preview">
                 <input value="8 4" type="text">
               </div>
@@ -116,7 +118,7 @@
                 </div>
               </div>
             </div>
-            <div class="lyrow ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Xóa</font></a> <span class="drag label"><i class="icon-move"></i><font><font>Kéo</font></font></span>
+            <div class="lyrow ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Xóa</font></a> <span class="drag label"><i class="icon-move"></i><font>kéo</font></span>
               <div class="preview">
                 <input value="4 4 4" type="text">
               </div>
@@ -128,7 +130,7 @@
                 </div>
               </div>
             </div>
-            <div class="lyrow ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Xóa</font></a> <span class="drag label"><i class="icon-move"></i><font><font>Kéo</font></font></span>
+            <div class="lyrow ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Xóa</font></a> <span class="drag label"><i class="icon-move"></i><font>kéo</font></span>
               <div class="preview">
                 <input value="2 6 4" type="text">
               </div>
@@ -152,7 +154,7 @@
             </div>
           </li>
           <li style="display: none;" class="boxes" id="elmBase">
-            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Xóa</font></a> <span class="drag label"><i class="icon-move"></i><font><font>Kéo</font></font></span> 
+            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Xóa</font></a> <span class="drag label"><i class="icon-move"></i><font>kéo</font></span> 
             	 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal"><font><font>Biên Tạp mềm miễn phí</font></font></button> <span class="btn-group"> <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#"><font><font>linking </font></font><span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li class="active"><a href="#" rel=""><font><font>Mặc định</font></font></a></li>
@@ -197,7 +199,7 @@
                 <p><em><font><font>Git</font></font></em><font><font>Đây là một phiên bản kiểm soát hệ thống phân phối, Ban đầu được phát triển bởi</font></font><b><font><font>Linus Torvalds</font></font></b><font><font> Bình thường được,sử dụng như là Linux kernel mã quản lý. Sau khi start, Git cùng nhũng người khác và những dự  xác lập mức tối đa thành công, đặc biệt trong Ruby</font></font></p>
               </div>
             </div>
-            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Xóa</font></a> <span class="drag label"><i class="icon-move"></i><font><font>Kéo</font></font></span>
+            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Xóa</font></a> <span class="drag label"><i class="icon-move"></i><font>kéo</font></span>
               <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal"><font><font>Biên Tạp mềm miễn phí</font></font></button></span>
               <div class="preview"><font><font>Địa chỉ</font></font></div>
               <div class="view">
@@ -481,7 +483,7 @@
                 </ul>
               </div>
             </div>
-            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Xóa</font></a> <span class="drag label"><i class="icon-move"></i><font><font>Kéo</font></font></span> <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal"><font>Chỉnh sửa</font></button> <a class="btn btn-mini" href="#" rel="well"><font><font>Nhúng</font></font></a> </span>
+            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Xóa</font></a> <span class="drag label"><i class="icon-move"></i><font>kéo</font></span> <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal"><font>Chỉnh sửa</font></button> <a class="btn btn-mini" href="#" rel="well"><font><font>Nhúng</font></font></a> </span>
               <div class="preview"><font><font>Danh sách chuyển hướng</font></font></div>
               <div class="view">
                 <ul class="nav nav-list" contenteditable="true">
@@ -674,7 +676,7 @@
                 <!-- Modal -->
                 <div id="myModalContainer" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><font><font>×</font></font></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><font>×</font></button>
                     <h3 id="myModalLabel" contenteditable="true"><font><font>Thanh tiêu đề</font></font></h3>
                   </div>
                   <div class="modal-body">
@@ -770,7 +772,7 @@
               <div class="preview"><font>Hộp thoại</font></div>
               <div class="view">
                 <div class="alert" contenteditable="true">
-                  <button type="button" class="close" data-dismiss="alert"><font><font>×</font></font></button>
+                  <button type="button" class="close" data-dismiss="alert"><font>×</font></button>
                   <h4><font>alert !</font></h4>
                   <strong><font>Thông báo!</font></strong><font> hộp thoại thông báo.</font></div>
               </div>
@@ -783,13 +785,13 @@
                   <div class="accordion-group">
                     <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#myAccordion" href="#collapseOne" contenteditable="true"><font><font> Tab # 1 </font></font></a> </div>
                     <div id="collapseOne" class="accordion-body collapse in">
-                      <div class="accordion-inner" contenteditable="true"><font><font> Chức năng Block ... </font></font></div>
+                      <div class="accordion-inner" contenteditable="true"><font> Chức năng Block ... </font></div>
                     </div>
                   </div>
                   <div class="accordion-group">
                     <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#myAccordion" href="#collapseTwo" contenteditable="true"><font><font> Tab 2 </font></font></a> </div>
                     <div id="collapseTwo" class="accordion-body collapse">
-                      <div class="accordion-inner" contenteditable="true"><font><font> Chức năng Block ... </font></font></div>
+                      <div class="accordion-inner" contenteditable="true"><font> Chức năng Block ... </font></div>
                     </div>
                   </div>
                 </div>
@@ -814,7 +816,7 @@
                     </div>
                     <div class="item"> <img alt="" src="img/2.jpg">
                       <div class="carousel-caption" contenteditable="true">
-                        <h4><font>Lướt són</font></h4>
+                        <h4><font>Lướt sóng</font></h4>
                         <p><font>Lướt sóng được cung cấp, sử dụng điêu luyện của mình và cân bằng, một môn thể thao chiến đấu với sóng. </font><font>Vận động viên đứng trên một ván lướt sóng, hoặc sử dụng các trang web, quỳ ban, thảm cao su bơm hơi, chèo thuyền, chèo thuyền và thể thao dưới nước khác để kiểm soát một làn sóng.</font></p>
                       </div>
                     </div>
@@ -833,7 +835,7 @@
         <ul class="nav nav-list accordion-group">
           <li class="nav-header"><i class="icon-plus icon-white"></i><font>Nâng cao</font></li>
           <li style="display: none;" class="boxes mute" id="elmComm">
-            <div class="preview"><font><font>Xây dựng ...</font></font></div>
+            <div class="preview"><font>Xây dựng ...</font></div>
           </li>
         </ul>
       </div>
@@ -843,7 +845,7 @@
       
       <div class="lyrow">
   <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font><font>loại bỏ</font></font></a>
-  <span class="drag label"><i class="icon-move"></i><font><font>kéo</font></font></span>
+  <span class="drag label"><i class="icon-move"></i><font>kéo</font></span>
   <div class="preview"><font><font>93</font></font></div>
   <div class="view">
     <div class="row-fluid clearfix">
@@ -880,10 +882,6 @@
 
 <script type="text/javascript">
 		function saveLayout(){
-			
-			var demo = $('.demo').html()
-		   //	alert(demo);
-			//return;
 		
 			$.ajax({  
 				type: "POST",  
@@ -898,34 +896,21 @@
 	
 		function downloadLayout(){
 			
-			var html = $('#download-layout').html();
-			var isCheckDownLoadzip = false;
-			//alert(html);
-			//return;
-			
 			$.ajax({  
 				type: "POST",  
 				contentType: "application/x-www-form-urlencoded;charset=utf-8",
 				url: "http://alatca.magazine:2046/build_v3/download.php",  
 				data: { 'layout-v3': $('#download-layout').html() },  
 				success: function(data) { 
-					isCheckDownLoadzip = true;
-					//alert('You can download file zip');
-					//isCheckDownLoadzip = data
-					//return;
-					//window.location.href = '/Alatca/build_v3/download.php'; 
+					//isCheckDownLoadzip = true;
+					window.location.href = 'http://alatca.magazine:2046/build_v3/appmagazine.zip'; 
 					
 					}
 			});
 		}
 		
 		function downloadHtmlLayout(){
-			
-			var html = $('#download-layout').html();
-			alert(html);
-			//return;
-			
-			
+		
 			$.ajax({  
 				type: "POST",  
 				contentType: "application/x-www-form-urlencoded;charset=utf-8",
@@ -990,7 +975,7 @@
 
 
 <div class="modal hide fade" role="dialog" id="editorModal">
-  <div class="modal-header"> <a class="close" data-dismiss="modal"><font><font>×</font></font></a>
+  <div class="modal-header"> <a class="close" data-dismiss="modal"><font>×</font></a>
     <h3><font>Chỉnh sửa</font></h3>
   </div>
   <div class="modal-body">
@@ -1003,11 +988,11 @@
 
 
 <div class="modal hide fade" role="dialog" id="downloadModal">
-  <div class="modal-header"> <a class="close" data-dismiss="modal"><font><font>×</font></font></a>
-    <h3><font><font>Tải về</font></font></h3>
+  <div class="modal-header"> <a class="close" data-dismiss="modal"><font>×</font></a>
+    <h3><font>Tải về</font></h3>
   </div>
   <div class="modal-body">
-    <p><font><font>Đã tạo ra một HTML sạch bên dưới, bạn có thể sao chép và dán mã vào dự án của bạn.</font></font></p>
+    <p><font>Đã tạo ra một HTML, bạn có thể sao chép và dán mã vào dự án của bạn.</font></p>
     <div class="btn-group">
       <button type="button" id="fluidPage" class="active btn btn-info"><i class="icon-fullscreen icon-white"></i><font><font> Chiều rộng thích ứng</font></font></button>
       <button type="button" class="btn btn-info" id="fixedPage"><i class="icon-screenshot icon-white"></i><font><font> Cố định chiều rộng</font></font></button>
@@ -1019,10 +1004,8 @@
     </p>
   </div>
   <div class="modal-footer"> 
-     <a class="btn btn-primary "  href="http://alatca.magazine:2046/build_v3/zip/index.html" >Download .html only</a>
-     <a class="btn btn-primary "  href="http://alatca.magazine:2046/build_v3/appmagazine.zip" >Download.zip</a>
-     <a class="btn btn-primary " id="download" onclick = 'downloadLayout()' >Get link Download .zip</a>
-	  <a class="btn btn-primary " id="downloadhtml"> Get link Download .html only</a>
+      <a class="btn btn-primary " id="download" onclick = 'downloadLayout()' >Download .zip</a>
+	  <a class="btn btn-primary " id="downloadhtml">Download .html only</a>
 	  <a class="btn" data-dismiss="modal">đóng</a> 
   </div>
 </div>
@@ -1081,7 +1064,7 @@
 					<h4><a href="http://bit.ly/ODtxyh" target="_blank">http://bit.ly/ODtxyh</a></h4>
 				</div>
 				<div class="lead">
-						<p class="promote">Share LayoutIt!</p>
+						<p class="promote">Share Layout!</p>
 		<!-- AddThis Button BEGIN -->
 		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
 			<a class="addthis_button_twitter" addthis:description="See the layout I've just make in LayoutIt! Follow this url: http://bit.ly/ODtxyh" addthis:title="LayoutIt! - See my Layout! @layoutit" addthis:url="http://bit.ly/ODtxyh"></a>
@@ -1133,15 +1116,15 @@
 </script>
 </div>
 
-<!--  
-<div class="modal hide fade" role="dialog" id="shareModal">
+ 
+<div class="modal hide fade" role="dialog" id="saveModal">
   <div class="modal-header"> <a class="close" data-dismiss="modal">×</a>
     <h3>Lưu Lại</h3>
   </div>
-  <div class="modal-body">Lưu thành công</div>
+  <div class="modal-body">Lưu template thành công</div>
   <div class="modal-footer"> <a class="btn" data-dismiss="modal">Đóng</a> </div>
 </div>
--->
+
 
 </body>
 </html>
